@@ -342,18 +342,11 @@ Yii::$app->layout = 'site';
                         </div>
                         <div class="swiper-container village-swiper">
                             <div class="swiper-wrapper">
+                                <? foreach ($model->village_slider as $item):?>
                                 <div class="swiper-slide">
-                                    <img src="/img/slider-first-1.jpg" alt="">
+                                    <img src="<?=$item?>" alt="">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="/img/slider-first-2.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/img/slider-first-3.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/img/slider-first-4.jpg" alt="">
-                                </div>
+                                <?endforeach;?>
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>

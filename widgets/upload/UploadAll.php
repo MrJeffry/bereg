@@ -7,7 +7,6 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\helpers\Json;
 use Yii;
-use app\models\website\Alias;
 
 /**
  * AddInBasket widget 
@@ -37,10 +36,6 @@ class UploadAll extends \yii\bootstrap\Widget
      */
     public $model;
     /**
-     * @var alias
-     */
-    private $alias=[];
-    /**
      * @var websiteid
      */
     public $websiteid;
@@ -60,6 +55,7 @@ class UploadAll extends \yii\bootstrap\Widget
      * @var host
      */
     public $host='';
+    public $images;
 
 
     /**
@@ -84,9 +80,7 @@ class UploadAll extends \yii\bootstrap\Widget
 
         $images=Json::decode($this->model[$this->attribute] ? $this->model[$this->attribute] : '[]');
 
-        foreach ($images as $key => $value) {
-            $this->alias[] = Alias::find()->where(["websiteid"=>$this->websiteid,"link"=>$value])->one();
-        }
+        $this->images = $images;
 
         Yii::$app->view->registerJs("
 
@@ -145,7 +139,7 @@ class UploadAll extends \yii\bootstrap\Widget
                                 \$('#".$this->options['id']."message-attachments').append('".
                                     Html::tag('div',
                                         Html::tag('div',
-                                            '<img src="\'+host+file.url+\'&v=small">'.
+                                            '<img src="\'+file.url+\'">'.
                                             '<input type="hidden" value="\'+file.url+\'">'
                                         ,['class' => 'attachment-content']).
                                         Html::tag('div',
@@ -183,16 +177,16 @@ class UploadAll extends \yii\bootstrap\Widget
     public function run()
     {
         $tmp='';
-        foreach ($this->alias as $aliasrow) {
-            $tmp.=($aliasrow && $aliasrow->link? 
+        foreach ($this->images as $aliasrow) {
+            $tmp.=($aliasrow?
                 Html::tag('div',
                     Html::tag('div',
-                        Html::img($this->host.$aliasrow->link.'&v=small').
-                        Html::input('hidden', null, $aliasrow->link)
+                        Html::img($aliasrow).
+                        Html::input('hidden', null, $aliasrow)
                     ,['class' => 'attachment-content']).
                     Html::tag('div',
                         Html::tag('p',
-                            basename($aliasrow->image)
+                            basename($aliasrow)
                         ).
                         Html::tag('span',
                             Html::a('<i class="icon-trash"></i> Удалить',
@@ -204,7 +198,7 @@ class UploadAll extends \yii\bootstrap\Widget
                 : '');
         }
         echo $this->form->field($this->model, $this->attribute, [
-            "template" => $this->template.Html::tag('div', $tmp, ['id' => $this->options['id'].'message-attachments', 'class' => ($this->model[$this->attribute] && count($this->alias)) ? 'message-attachments no-b' : 'message-attachments no-b no-s']).
+            "template" => $this->template.Html::tag('div', $tmp, ['id' => $this->options['id'].'message-attachments', 'class' => ($this->model[$this->attribute] && count($this->images)) ? 'message-attachments no-b' : 'message-attachments no-b no-s']).
 
             Html::tag($this->tagName, $this->encodeLabel ? Html::encode($this->label) : $this->label .Html::tag('input', null, $this->options), ['class' => $this->tagClass]).
             Html::tag('p',' ').

@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
@@ -62,6 +63,8 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $model = new Admin();
+
+        $model->village_slider = Json::decode($model->village_slider);
 
         return $this->render('index', [
             'model' => $model,

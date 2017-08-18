@@ -30,7 +30,7 @@ class Admin extends Model
     public $beside_item_bridge_desc;
     public $beside_item_bridge_km;
 
-    public $slider;
+    public $village_slider;
 
 
 

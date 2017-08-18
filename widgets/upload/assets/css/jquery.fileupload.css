@@ -35,3 +35,49 @@
     height: 100%;
   }
 }
+.message-attachments {
+  overflow: hidden;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 0 15px 0;
+  margin-bottom: 10px;
+}
+
+.message-attachment {
+  position: relative;
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #f1f1f1;
+}
+
+.message-attachment a {
+  text-decoration: none;
+}
+
+.message-attachment img {
+  display: block;
+  width: 100%;
+}
+
+.attachment-info {
+  background: #f9f9f9;
+  padding: 10px;
+}
+
+.attachment-info p {
+  margin: 0;
+  width: 100%;
+  display: inline-block;
+  text-align: justify;
+  text-indent: 0;
+
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+
+}
+
+.attachment-info span {
+  font-size: 11px;
+  color: #aaa;
+}

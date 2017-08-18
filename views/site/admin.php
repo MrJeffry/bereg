@@ -9,6 +9,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 use app\widgets\upload\UploadOne;
+use app\widgets\upload\UploadAll;
 
 $this->title = 'Солнечный берег';
 $this->params['breadcrumbs'][] = $this->title;
@@ -58,6 +59,19 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= $form->field($model, 'beside_item_bridge_km') ?>
                 </div>
             </div>
+
+            <hr>
+            <h2>Слайдер</h2>
+
+
+            <?= UploadAll::widget([
+                'form' => $form,
+                'model' => $model,
+                'attribute' => 'village_slider',
+                'tagClass' => 'btn btn-default fileinput-button btn-rounded',
+                'label' => '<span class="icon-cloud-upload"></span> '.Yii::t('app', 'Загрузить'),
+            ]);?>
+
             <div class="form-group">
                 <?= Html::submitButton('Сохраниеть', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
             </div>
