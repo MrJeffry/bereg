@@ -61,7 +61,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $model = new Admin();
+
+        return $this->render('index', [
+            'model' => $model,
+        ]);
+
     }
 
     /**
@@ -114,4 +119,10 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionUpload()
+    {
+
+        error_reporting(E_ALL | E_STRICT);
+        $upload_handler = new \app\models\UploadHandler();
+    }
 }

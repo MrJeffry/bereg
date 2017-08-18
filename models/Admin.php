@@ -11,6 +11,13 @@ use yii\base\Model;
 class Admin extends Model
 {
     public $title;
+    public $description;
+    public $keywords;
+
+    public $header_title;
+    public $header_desc;
+
+    public $beside_item_aqua;
 
 
     /**
@@ -20,7 +27,20 @@ class Admin extends Model
     {
         return [
             // name, email, subject and body are required
-            [['title'], 'required'],
+            [[
+                'title',
+                'description',
+            ], 'required'],
+            [[
+                'title',
+                'description',
+                'keywords',
+
+                'header_title',
+                'header_desc',
+
+                'beside_item_aqua',
+            ], 'string'],
             // email has to be a valid email address
             // ['email', 'email'],
             // verifyCode needs to be entered correctly
@@ -34,7 +54,12 @@ class Admin extends Model
     public function attributeLabels()
     {
         return [
-            'verifyCode' => 'Verification Code',
+            'title' => 'Title',
+            'description' => 'Description',
+            'keywords' => 'Keywords',
+
+            'header_title' => 'Заголовок на банере',
+            'header_desc' => 'Описание на банере',
         ];
     }
 

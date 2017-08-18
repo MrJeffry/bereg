@@ -7,8 +7,9 @@ Yii::$app->layout = 'site';
 <head>
     <meta charset="utf-8">
 
-    <title>Солнечный берег</title>
-    <meta name="description" content="">
+    <title><?=$model->title?></title>
+    <meta name="description" content="<?=$model->description?>">
+    <meta name="keywords" content="<?=$model->keywords?>">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,8 +51,8 @@ Yii::$app->layout = 'site';
                         <h1 class="logo-tile">Солнечный <br>берег</h1>
                         <p>Коттеджный поселок</p>
                     </section>
-                    <h2 class="header-title">Лучшее место для жизни</h2>
-                    <p class="header-desc">Море, горы, воздух парапланны, водный спорт</p>
+                    <h2 class="header-title"><?=$model->header_title?></h2>
+                    <p class="header-desc"><?=$model->header_desc?></p>
                 </div>
             </div>
         </div>
@@ -70,7 +71,7 @@ Yii::$app->layout = 'site';
                     </div>
                     <div class="beside-items">
                         <div class="beside-item beside-item-aqua">
-                            <img src="img/aqua.jpg" alt="Аквапарк">
+                            <img src="<?=$model->beside_item_aqua?>" alt="Аквапарк">
                             <div class="desc">
                                 <b>Аквапарк</b>
                                 <i>Большой и красивый акварк</i>

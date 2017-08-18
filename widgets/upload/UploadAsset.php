@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\assets;
+namespace app\widgets\upload;
 
 use yii\web\AssetBundle;
 
@@ -13,17 +13,18 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class AppAsset extends AssetBundle
+class UploadAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath = '@app/widgets/upload/assets';
     public $css = [
-        'css/admin.css',
+        'css/jquery.fileupload.css',
     ];
     public $js = [
+        'js/jquery.fileupload.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\jui\JuiAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
     ];
+
 }
