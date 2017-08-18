@@ -1,0 +1,89 @@
+.main-header {
+    min-height: 476px;
+    background: url('/img/header.jpg') no-repeat top / 100%;
+
+    .nav {
+        float: left;
+        padding: 35px 0 0 0;
+    }
+
+    .header-desc {
+        width: 235px;
+        margin: 72px auto 0 auto;
+        text-align: center;
+        @include surkoM(normal,29px);
+        line-height: (35/29);
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    nav {
+        width: 100%;
+        background: $gold;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 118px 0 35px 0;
+        z-index: 0;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        a { 
+            display: block;
+            width: 191px;
+            margin: 0 auto;
+            padding: 13px 0;
+            color: $white;
+            @include surkoR(normal,15px);
+            line-height: 1;
+        }
+        &.active {
+            display: block;
+            opacity: 1;
+            transform: translate(0,0);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    .main-header {
+        min-height: 884px;
+        background: url('/img/header-d.jpg') no-repeat top / cover;        
+        .nav {
+            width: 620px;
+            padding: 35px 0 0 0;
+            float: right;
+        }
+        nav {
+            width: 100%;
+            position: static;
+            padding: 0;
+            opacity: 1;
+            background: transparent;
+            
+
+            a {
+                padding: 0 25px 15px 0;
+                display: inline-block;
+                color: $black;
+                text-decoration: underline;
+                width: auto;
+            }
+        }
+
+        .header-title {
+            width: 490px;
+            margin: 390px 0 42px 0;
+            text-align: left;
+            @include surkoBl(normal,60px);
+        }
+
+        .header-desc {
+            width: 477px;
+            margin: 0;
+            text-align: left;
+            color: $gold;
+        }
+    }
+    
+}

@@ -1,0 +1,16 @@
+h1 {
+    margin: 0;
+    @include surkoBl(normal,19px);
+    text-transform: uppercase;
+    line-height: (21px/19px);
+}
+
+h2 {
+    width: 268px;
+    margin: 52px auto 0 auto;
+    @include surkoR(normal,29px);
+    color: $white;
+    line-height: (35/29);
+    text-transform: uppercase;
+    text-align: center;
+}

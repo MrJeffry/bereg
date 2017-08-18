@@ -1,0 +1,47 @@
+@mixin surkoL($style,$size) {
+	font-family: 'surko', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin surkoR($style,$size) {
+	font-family: 'surko', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin surkoM($style,$size) {
+	font-family: 'surko', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin surkoBo($style,$size) {
+	font-family: 'surko', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin surkoBl($style,$size) {
+	font-family: 'surko', Arial, Helvetica, sans-serif;
+	font-weight: 900;
+    font-style: $style;
+    font-size: $size;
+}
+
+@mixin content($top,$right,$bottom,$left) {
+    position: absolute;
+    content: '';
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin lh($fz,$lh) {
+    line-height: ($fz/$lh);
+}

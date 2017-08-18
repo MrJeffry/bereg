@@ -1,0 +1,265 @@
+.beside {
+    margin: 0 0 2px 0;
+    padding: 37px 0 0 0;
+    background: url('/img/beside.jpg') no-repeat top/cover;
+}
+
+.beside-description {
+    h2 {
+        width: 145px;
+        margin: 0 auto 27px auto;
+        @include surkoBl(normal, 35px);
+        color: $gold;
+        line-height: (36/35);
+    }
+
+    h3 {
+        width: 230px;
+        margin: 0 auto 20px auto;
+        @include surkoM(normal,29px);
+        @include lh(29,31);
+        color: $gold;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+          font-size: 18px;
+          @include lh(18,31);
+          color: $light-black;  
+        }
+    }
+
+    p {
+        width: 263px;
+        margin: 0 auto 20px auto;
+        @include surkoL(italic,14px);
+        text-align: center;
+    }
+}
+
+ .beside-items {
+    width: 320px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: left;
+ }
+
+ .beside-item {
+    position: relative;
+    width: 159px;
+    height: 159px;
+    margin: 0 0 2px 0;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 16px;
+    z-index: 0;
+
+    &:nth-child(odd) {
+        margin-right: 2px;
+    }
+
+    &:last-child {
+        width: 100%;
+        margin: 0;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: -1;
+    }
+    
+    .distance {
+        display: inline-block;
+        padding: 1px 10px;
+        margin: 67px 0 0 0;
+        bottom: 60px;
+        text-align: center;
+        @include surkoM(normal,16px);
+        line-height: 1.9;
+        background: $gold;
+        color: $dark-gold;
+
+        span {
+            padding-left: 3px;
+        }
+    }
+
+    .desc {
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        padding: 8px 40px 0 15px;
+        bottom: 0;
+        color: $white;
+        background-color: rgba($black, .47);
+    }
+
+    b {
+        display: block;
+        text-align: left;
+        margin: 0 0 5px 0;
+        @include surkoBl(normal,14px);
+        line-height: 1;
+    }
+
+    i {
+        display: block;
+        text-align: left;
+        @include surkoL(italic,12px);
+        @include lh(11,12);
+    }
+ }
+
+ @media (min-width: 1200px) {
+
+    .beside {
+        margin: 0 0 2px 0;
+        padding: 37px 0 0 0;
+        background: url('/img/beside-d.jpg') no-repeat top;
+    }
+    
+    .beside-description {
+
+        h2 {
+            width: 490px;
+            margin: 0 0 27px 0;
+            @include surkoBl(normal, 60px);
+            line-height: (60/60);
+            text-align: left;
+        }
+    
+        h3 {
+            width: 485px;
+            margin: 0 0 20px 0;
+            @include surkoL(normal,29px);
+            @include lh(29,31);
+            text-align: left;
+            
+            span {
+                @include surkoL(normal,29px);
+                @include lh(29,31);
+                color: $gold; 
+            }
+        }
+    
+        p {
+            width: 600px;
+            margin: 0 0 20px 0;
+            @include surkoL(italic,18px);
+            text-align: left;
+        }
+    }
+
+    .beside-items {
+        width: 100%;
+        height: 1471px;
+        padding-top: 260px;
+        margin: 0 ;
+        font-size: 0;
+        position: relative;
+     }
+
+     .beside-item {
+        position: relative;
+        width: 270px;
+        height: 270px;
+        top: 0;
+        left: 0;
+        margin: 0 0 2px 0;
+        display: block;
+        font-size: 16px;
+        z-index: 0;
+
+        &-aqua {
+            background: url("/img/beside-d-1.png") no-repeat;            
+        }
+
+        &-para {
+            height: 561px;
+            top: -544px;
+            left: 293px;
+            background: url("/img/beside-d-2.png") no-repeat;
+        }
+
+        &-bridge {
+            top: 18px;
+            background: url("/img/beside-d-5.png") no-repeat;         
+        }
+
+        &-fish {
+            top: -1106px;
+            left: 586px;
+            background: url("/img/beside-d-3.png") no-repeat;
+        }
+
+        &-wear {
+            width: 560px;
+            height: 560px;
+            top: -1379px;
+            left: 586px;
+            background: url("/img/beside-d-4.png") no-repeat right;
+        }
+
+        &-volcan {
+            top: -1065px;
+            left: 878px;
+            background: url("/img/beside-d-7.png") no-repeat;
+        }
+
+        &-serf {
+            width: 856px !important;
+            height: 563px;
+            top: -1916px;
+            left: 0;
+            background: url("/img/beside-d-6.png") no-repeat center/ 100%;
+        }
+
+        &-text {
+            top: -1644px;
+            left: 878px;
+            background: rgba($gold, .8);
+        }
+    
+        &:nth-child(odd) {
+            margin-right: 0;
+        }
+    
+    
+        img {
+            display: none;
+
+        }
+        
+        .distance {
+            display: block;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            right: 0;
+            width: 82px;
+            bottom: 55px;
+            z-index: 1;
+            @include surkoM(normal,20px);
+            line-height: 1.9;
+            span {
+                padding-left: 3px;
+            }
+        }
+    
+        .desc {
+            height: 80px;
+            padding: 8px 90px 0 15px;
+        }
+    
+        b {
+            font-size: 20px;
+        }
+    
+        i {
+            font-size: 14px;
+        }
+     }
+ }

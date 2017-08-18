@@ -1,0 +1,187 @@
+.accomplishment {
+    padding: 52px 0 0 0;            
+    background: url('/img/accomplishment.jpg') no-repeat top / cover;
+    &-description {
+        h2 {
+        width: 272px;
+        margin: 0 auto 40px auto;
+        @include surkoBl(normal, 30px);
+        color: $dark-black;
+        line-height: (36/30);
+        }
+    }
+}
+    
+
+.accomplishment-items {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+
+    .accomplishment-item {
+        width: 50%;
+        height: 134px;
+        display: inline-block;
+        font-size: 14px;
+        color: $white;
+        @include surkoL(normal,10px);
+        @include lh(1,1);
+        vertical-align: top;
+
+        p {
+            margin: 0;
+        }
+
+        &-school {
+            padding: 17px 0px 0 12px;
+            background: rgba($purple, 1);
+            text-align: left;
+
+            .title {
+                width: 134px;
+                padding: 7px 13px 7px 9px;
+                @include surkoM(normal, 10px);
+                text-transform: uppercase;
+                background: $purple-74;
+                .name {
+                    float: left;
+                }
+
+                .distance {
+                    float: right;
+                }
+            }
+
+            p {
+                margin-top: 14px;
+                padding: 0 59px 0 0;
+            }
+
+        }
+
+        &-hospitel {
+            padding: 17px 0 0 12px;            
+            background: rgba($green-0b, 1);
+            text-align: right;
+
+            .title {
+                width: 134px;
+                padding: 7px 13px 7px 9px;
+                @include surkoM(normal, 10px);
+                text-transform: uppercase;
+                background: $green-32;
+                .name {
+                    float: left;
+                }
+
+                .distance {
+                    float: right;
+                }
+            }
+
+            p {
+                margin-top: 14px;
+                padding: 0 15px 0 55px;
+            }
+
+        }
+
+        &-baby {
+            padding: 17px 0px 0 12px;            
+            background: rgba($brown, 1);
+            text-align: left;
+            
+            .title {
+                width: 134px;
+                padding: 7px 13px 7px 9px;
+                @include surkoM(normal, 10px);
+                text-transform: uppercase;
+                background: $yellow-36;
+                .name {
+                    float: left;
+                }
+
+                .distance {
+                    float: right;
+                }
+            }
+
+            p {
+                margin-bottom: 14px;                
+                padding: 0 59px 0 0;
+            }
+        }
+
+        &-wear {
+            padding: 17px 0 0 12px;                        
+            background: rgba($blue-21, 1);
+            text-align: right;
+
+            .title {
+                width: 134px;
+                padding: 7px 13px 7px 9px;
+                @include surkoM(normal, 10px);
+                text-transform: uppercase;
+                background: $blue-de;
+                .name {
+                    float: left;
+                }
+
+                .distance {
+                    float: right;
+                }
+            }
+
+            p {
+                margin-bottom: 14px;
+                padding: 0 15px 0 55px;
+            }
+        }
+
+
+    }
+
+    .accomplishment-item-float {
+        position: absolute;
+        top: calc(50% - 59px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 118px;
+        height: 111px;
+        border: 2px solid $gold;
+        background: $dark-black;
+        color: $white;
+
+        ul {
+            margin-top: 5px;
+            margin-bottom: 0;
+            padding: 0 0 0 20px;
+            font-size: 8px;
+            text-align: left;
+            list-style: none;
+
+            li {
+                position: relative;
+                margin-bottom: 8px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 4px;
+                    top: 3px;
+                    left: -11px;
+                    background: $gold;
+                }
+            }
+        }
+
+        .btn {
+            font-size: 8px;
+        }
+    }
+}
+
+

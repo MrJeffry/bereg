@@ -1,0 +1,50 @@
+footer {
+    padding: 58px 0 0 0;
+    position: absolute;
+    bottom: -350px;
+    left: 0;
+    right: 0;
+    height: 386px;
+    background: url('/img/footer.png') no-repeat 0 10% / cover;
+
+     p {
+        margin: 0 auto;
+        margin-bottom: 49px;
+        @include surkoBo(italic,14px);
+        @include lh(16,14);
+        color: rgba($white, .5);
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .footer-nav {
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+
+            li {
+                margin-bottom: 25px;
+                cursor: pointer;
+                a {
+                    @include surkoR(normal, 10px);
+                    color: rgba($white, .5);
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        right: 2px;
+        bottom: 50px;
+        width: 44px;
+        height: 44px;
+        background: $green-33;
+    }
+}

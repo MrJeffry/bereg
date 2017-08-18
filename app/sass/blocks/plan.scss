@@ -1,0 +1,59 @@
+.plan {
+    padding: 55px 0 0 0;
+    background: url('/img/plan.jpg') no-repeat top;
+}
+
+.plan-description {
+    h2 {
+        width: 200px;
+        margin: 0 auto 27px auto;
+        @include surkoBl(normal, 35px);
+        color: $white;
+        line-height: (36/35);
+    }
+
+    p {
+        margin: 0 0 25px 0;
+        @include surkoM(normal, 24px);
+        color: $light-grey;
+        text-align: center;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 215px;
+    border: none;
+}
+
+.plan-number {
+    display: none;
+}
+
+.plan-detail {
+    padding: 22px 0;
+    background: url('/img/plan.jpg') no-repeat top;    
+
+    p {
+        margin: 0 0 15px 0;
+        @include surkoR(normal,12px);
+        color: $white;
+    }
+}
+
+.plan-gallery {
+    background: $white;
+    text-align: center;
+    &_group {
+        width: 290px;
+        margin: 0 auto;
+        position: relative;
+        top: -15px;
+        z-index: 1;
+    }
+    img {
+        vertical-align: top;
+        width: 141px;
+        margin-bottom: 4px;
+    }
+}

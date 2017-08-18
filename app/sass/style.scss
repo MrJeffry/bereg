@@ -1,0 +1,33 @@
+/*reset*/
+@import 'reset.scss';
+
+/*helpers*/
+@import 'variables.scss';
+@import 'mixins.scss';
+
+
+/*core*/
+@import 'grid.scss';
+@import 'global.scss';
+@import 'font.scss';
+@import 'typographic.scss';
+@import 'btn.scss';
+
+/*libs*/
+@import 'animate.scss';
+@import 'swiper.scss';
+
+/*blocks*/
+@import 'blocks/header.scss';
+@import 'blocks/hamburger.scss';
+@import 'blocks/logo.scss';
+@import 'blocks/beside.scss';
+@import 'blocks/infrastructure.scss';
+@import 'blocks/houses.scss';
+@import 'blocks/plan.scss';
+@import 'blocks/village.scss';
+@import 'blocks/application.scss';
+@import 'blocks/interioirs.scss';
+@import 'blocks/accomplishment.scss';
+@import 'blocks/map.scss';
+@import 'blocks/footer.scss';

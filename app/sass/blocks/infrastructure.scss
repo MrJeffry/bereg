@@ -1,0 +1,280 @@
+.infrastructure {
+    padding: 37px 0 44px 0;
+    background: url('/img/infrastructure.jpg') no-repeat top/cover;
+}
+
+.infrastructure-description {
+    h2 {
+        width: 200px;
+        margin: 0 auto 27px auto;
+        @include surkoBl(normal, 35px);
+        color: $white;
+        line-height: (36/35);
+    }
+
+    h3 {
+        width: 230px;
+        margin: 0 auto 20px auto;
+        @include surkoM(normal,29px);
+        @include lh(29,31);
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+          font-size: 18px;
+          @include lh(18,31);
+          color: $blue;  
+        }
+    }
+
+    p {
+        width: 263px;
+        margin: 0 auto 20px auto;
+        @include surkoL(italic,14px);
+        text-align: center;
+    }
+}
+
+.infrastructure-items {
+    width: 290px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.infrastructure-item {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 6px;
+    width: 128px;
+    height: 130px;
+    @include surkoL(normal, 12px);
+    @include lh(11,12);
+    color: $white;
+    text-align: left;
+    vertical-align: top;
+    &:before {
+        @include content(20px,0,0,0);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:nth-child(odd) {
+        margin-right: 8px;
+    }
+
+    &.water {
+        padding-top: 78px;
+        background: rgba($light-blue, .65);
+        &:before {
+            width: 43px;
+            height: 59px;
+            background: url('/img/water.png') no-repeat;
+        }
+    }
+
+    &.eco {
+        padding-top: 67px;
+        background: rgba($green, .65);
+        &:before {
+            width: 55px;
+            height: 43px;
+            background: url('/img/eco.png') no-repeat;
+        }
+    }
+
+    &.sun {
+        padding-top: 68px;
+        background: rgba($yellow, .65);
+        &:before {
+            width: 57px;
+            height: 57px;
+            background: url('/img/sun.png') no-repeat;
+        }
+    }
+
+    &.tennis {
+        padding-top: 83px;
+        background: rgba($red, .65);
+        &:before {
+            width: 54px;
+            height: 54px;
+            background: url('/img/tennis.png') no-repeat;
+        }
+    }
+
+    &.children {
+        padding-top: 83px;
+        background: rgba($pink, .65);
+        &:before {
+            width: 56px;
+            height: 50px;
+            background: url('/img/horse.svg') no-repeat top/56px;
+        }
+    }
+
+    &.beach {
+        padding-top: 84px;
+        background: rgba($orange, .65);
+         &:before {
+            width: 64px;
+            height: 65px;
+            background: url('/img/beach.png') no-repeat;
+        }
+    }
+
+    &.breeze {
+        padding-top: 84px;
+        background: rgba($breeze, .65);
+         &:before {
+            width: 64px;
+            height: 65px;
+            background: url('/img/.png') no-repeat;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .infrastructure {
+        height: 886px;
+        padding: 37px 0 0 0;
+        background: url('/img/infrastructure-d.jpg') no-repeat top/cover;
+    }
+
+    .infrastructure-description {
+        float: right;
+
+        h2 {
+            width: 485px;
+            margin: 0 0 27px 0;
+            @include surkoBl(normal, 60px);
+            color: $white;
+            line-height: (36/35);
+            text-align: right;
+        }
+    
+        h3 {
+            width: 485px;
+            margin: 0 auto 20px auto;
+            @include surkoL(normal,29px);
+            @include lh(29,31);
+            color: $blue;
+            text-align: right;
+            text-transform: uppercase;
+    
+            span {
+              font-size: 29px;
+              @include lh(18,31);
+              color: $blue;  
+            }
+        }
+    
+        p {
+            width: 500px;
+            margin: 0 0 20px 0;
+            font-size: 18px;
+            text-align: rigjt;
+        }
+    }
+
+    .infrastructure-items {
+        position: relative;
+        height: 770px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .infrastructure-item {
+        width: 268px;
+        height: 270px;
+        display: block;
+        font-size: 18px;
+        padding-left: 26px;
+        padding-right: 50px;
+        &:before {
+            top: 70px;
+        }
+
+        &.water {
+            top: -89px;
+            left: 0;
+            padding-top: 197px;
+            &:before {
+                width: 82px;
+                height: 112px;
+                background: url('/img/water-d.png') no-repeat;
+            }
+        }
+
+        &.eco {
+            top: -74px;
+            left: 0;
+            padding-top: 186px;
+            &:before {
+                width: 106px;
+                height: 82px;
+                background: url('/img/eco-d.png') no-repeat;
+            }
+        }
+
+        &.sun {
+            top: -352px;
+            left: 292px;
+            padding-top: 204px;
+            &:before {
+                width: 112px;
+                height: 112px;
+                background: url('/img/sun-d.png') no-repeat;
+            }
+        }
+
+        &.tennis {
+            top: -337px;
+            left: 0;
+            padding-top: 221px;
+            &:before {
+                width: 108px;
+                height: 108px;
+                background: url('/img/tennis-d.png') no-repeat;
+            }
+        }
+
+        &.children {
+            top: -615px;
+            left: 292px;
+            padding-top: 203px;
+            &:before {
+                width: 110px;
+                height: 96px;
+                background: url('/img/horse-d.png') no-repeat top/56px;
+            }
+        }
+
+        &.breeze {
+            top: -1171px;
+            left: 583px;
+            padding-top: 184px;
+            &:before {
+                width: 124px;
+                height: 95px;
+                background: url('/img/breeze-d.png') no-repeat;
+            }
+        }
+
+        &.beach {
+            top: -893px;
+            left: 874px;
+            padding-top: 203px;
+            &:before {
+                width: 114px;
+                height: 114px;
+                background: url('/img/beach-d.png') no-repeat;
+            }
+        }
+
+    }
+}

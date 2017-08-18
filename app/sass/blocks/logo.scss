@@ -1,0 +1,47 @@
+.logo { 
+        position: relative;
+        width: 191px;
+        padding: 32px 35px 23px 29px;
+        background: $gold;
+        color: $white;
+        text-align: center;
+        margin: 0 auto;
+        transition: background .3s ease-in-out,
+                    color .3s ease-in-out;
+
+        > p {
+            margin: 10px 0 0 0;
+            @include surkoBl(normal,7px);
+            line-height: 0;
+        }
+
+        &.white {
+            background: $white;
+            color: $gold;
+            transform: translate(0,0);
+        }
+
+        &.footer {
+            background: transparent;
+            color: $yellow-58;    
+            > p {
+                color: $yellow-58; 
+            }        
+        }
+    }
+
+@media (min-width: 992px) {
+    .logo {
+        width: 270px;
+        float: left;
+
+        h1 {
+            font-size: 27px;
+        }
+
+        > p {
+            font-size: 10px;
+        }
+    }
+    
+}
