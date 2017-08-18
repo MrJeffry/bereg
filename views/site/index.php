@@ -71,19 +71,19 @@ Yii::$app->layout = 'site';
                     </div>
                     <div class="beside-items">
                         <div class="beside-item beside-item-aqua">
-                            <img src="<?=$model->beside_item_aqua?>" alt="Аквапарк">
+                            <img src="<?=$model->beside_item_aqua_img?>" alt="Аквапарк">
                             <div class="desc">
-                                <b>Аквапарк</b>
-                                <i>Большой и красивый акварк</i>
+                                <b><?=$model->beside_item_aqua_title?></b>
+                                <i><?=$model->beside_item_aqua_desc?></i>
                             </div>
-                            <span class="distance">80<span>км</span></span>
+                            <span class="distance"><?=$model->beside_item_aqua_km?><span>км</span></span>
                         </div>
                         <div class="beside-item beside-item-bridge">
-                            <img src="img/krum.jpg" alt="Аквапарк">
-                            <span class="distance">80<span>км</span></span>
+                            <img src="<?=$model->beside_item_bridge_img?>" alt="Аквапарк">
+                            <span class="distance"><?=$model->beside_item_bridge_km?><span>км</span></span>
                             <div class="desc">
-                                <b>Крым</b>
-                                <i>Переправа в Крым </i>
+                                <b><?=$model->beside_item_bridge_title?></b>
+                                <i><?=$model->beside_item_bridge_desc?> </i>
                             </div>
                         </div>
                         <div class="beside-item beside-item-para">
