@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Fri, 18 Aug 2017 18:24:30 +0000</pubDate><title><![CDATA[аквапарк]]></title><url><![CDATA[akvapark]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[аквапарк]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;div class=&quot;beside-item beside-item-aqua&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;http://test-simple.loc/data/uploads/img/beside-d-1.png&quot; style=&quot;width: 270px; height: 270px;&quot; /&gt;
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Аквапарк&lt;/b&gt; &lt;i&gt;Большой и красивый акварк&lt;/i&gt;&lt;/div&gt;
+	&lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-bridge&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/krum.jpg&quot; /&gt; &lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;
+
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Крым&lt;/b&gt; &lt;i&gt;Переправа в Крым &lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-para&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/paraplane.jpg&quot; /&gt; &lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;
+
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Парапланеризм&lt;/b&gt; &lt;i&gt; Парапланеристы со всей России&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-fish&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/river.jpg&quot; /&gt; &lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;
+
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Рыбалка&lt;/b&gt; &lt;i&gt;Множество прудов и рек&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-wear&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/field.jpg&quot; /&gt;
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Кавказские горы&lt;/b&gt; &lt;i&gt;Красота и воздух&lt;/i&gt;&lt;/div&gt;
+	&lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-volcan&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/source.jpg&quot; /&gt; &lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;
+
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Грязевой лечебный вулкан «Тиздар»&lt;/b&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-text hidden-xs hidden-md&quot;&gt;
+	&lt;p&gt;lorem&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;beside-item beside-item-serf&quot;&gt;&lt;img alt=&quot;Аквапарк&quot; src=&quot;img/windsurfing.jpg&quot; /&gt; &lt;span class=&quot;distance&quot;&gt;80&lt;span&gt;км&lt;/span&gt;&lt;/span&gt;
+
+	&lt;div class=&quot;desc&quot;&gt;&lt;b&gt;Аквапарк&lt;/b&gt; &lt;i&gt;Большой и красивый акварк&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>
