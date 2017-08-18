@@ -19,9 +19,9 @@ $config = [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
+        // 'errorHandler' => [
+            // 'errorAction' => 'site/error',
+        // ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set
@@ -39,14 +39,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'admin' => 'site/login'
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];

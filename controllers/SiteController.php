@@ -8,7 +8,7 @@ use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
-use app\models\ContactForm;
+use app\models\Admin;
 
 class SiteController extends Controller
 {
@@ -20,21 +20,21 @@ class SiteController extends Controller
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout','admin'],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['logout','admin'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
                 ],
             ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
+            // 'verbs' => [
+                // 'class' => VerbFilter::className(),
+                // 'actions' => [
+                    // 'logout' => ['post'],
+                // ],
+            // ],
         ];
     }
 
@@ -101,26 +101,17 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    public function actionContact()
+    public function actionAdmin()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+        $model = new Admin();
+        if ($model->load(Yii::$app->request->post()) && $model->contact()) {
             Yii::$app->session->setFlash('contactFormSubmitted');
 
             return $this->refresh();
         }
-        return $this->render('contact', [
+        return $this->render('admin', [
             'model' => $model,
         ]);
     }
 
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
 }
