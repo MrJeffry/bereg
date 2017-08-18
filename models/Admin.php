@@ -30,6 +30,9 @@ class Admin extends Model
     public $beside_item_bridge_desc;
     public $beside_item_bridge_km;
 
+    public $slider;
+
+
 
     /**
      * @return array the validation rules.
@@ -42,28 +45,30 @@ class Admin extends Model
                 'title',
                 'description',
             ], 'required'],
-            [[
-                'title',
-                'description',
-                'keywords',
-
-                'header_title',
-                'header_desc',
-
-                'beside_item_aqua_img',
-                'beside_item_aqua_title',
-                'beside_item_aqua_desc',
-                'beside_item_aqua_km',
-
-                'beside_item_bridge_img',
-                'beside_item_bridge_title',
-                'beside_item_bridge_desc',
-                'beside_item_bridge_km',
-            ], 'string'],
+//            [[
+//                'title',
+//                'description',
+//                'keywords',
+//
+//                'header_title',
+//                'header_desc',
+//
+//                'beside_item_aqua_img',
+//                'beside_item_aqua_title',
+//                'beside_item_aqua_desc',
+//                'beside_item_aqua_km',
+//
+//                'beside_item_bridge_img',
+//                'beside_item_bridge_title',
+//                'beside_item_bridge_desc',
+//                'beside_item_bridge_km',
+//                'slider',
+//            ], 'string'],
+            [
+                array_keys($this->attributes), 'string'
+            ],
             // email has to be a valid email address
             // ['email', 'email'],
-            // verifyCode needs to be entered correctly
-            // ['verifyCode', 'captcha'],
         ];
     }
 
