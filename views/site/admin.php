@@ -20,9 +20,8 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php $form = ActiveForm::begin(); ?>
 
 
-                <?= $form->field($model, 'email') ?>
+                <?= $form->field($model, 'title') ?>
 
-                <?= $form->field($model, 'subject') ?>
 
                 <div class="form-group">
                     <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>

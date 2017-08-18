@@ -104,7 +104,7 @@ class SiteController extends Controller
     public function actionAdmin()
     {
         $model = new Admin();
-        if ($model->load(Yii::$app->request->post()) && $model->contact()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
             Yii::$app->session->setFlash('contactFormSubmitted');
 
             return $this->refresh();

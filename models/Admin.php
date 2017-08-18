@@ -10,11 +10,7 @@ use yii\base\Model;
  */
 class Admin extends Model
 {
-    public $name;
-    public $email;
-    public $subject;
-    public $body;
-    public $verifyCode;
+    public $title;
 
 
     /**
@@ -24,11 +20,11 @@ class Admin extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
+            [['title'], 'required'],
             // email has to be a valid email address
-            ['email', 'email'],
+            // ['email', 'email'],
             // verifyCode needs to be entered correctly
-            ['verifyCode', 'captcha'],
+            // ['verifyCode', 'captcha'],
         ];
     }
 
@@ -42,23 +38,17 @@ class Admin extends Model
         ];
     }
 
-    /**
-     * Sends an email to the specified email address using the information collected by this model.
-     * @param string $email the target email address
-     * @return bool whether the model passes validation
-     */
-    public function contact($email)
+    public function init()
     {
-        if ($this->validate()) {
-            Yii::$app->mailer->compose()
-                ->setTo($email)
-                ->setFrom([$this->email => $this->name])
-                ->setSubject($this->subject)
-                ->setTextBody($this->body)
-                ->send();
+        $data = unserialize(file_get_contents(__DIR__ . '/data'));
+        $this->load(['Admin'=>$data]);
+    }
 
-            return true;
-        }
-        return false;
+    public function save()
+    {
+
+        file_put_contents(__DIR__ . '/data', serialize($this->attributes));
+        return true;
+
     }
 }
