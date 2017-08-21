@@ -160,7 +160,6 @@ class Admin extends Model
         return [
             [[
                 'title',
-                'description',
             ], 'required'],
             [
                 array_keys($this->attributes), 'string'

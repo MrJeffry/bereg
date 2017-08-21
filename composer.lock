@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "194861736b4b0089b9558bebc3b5dcff",
+    "content-hash": "86bc7e0850f3951d7af6ed329b88f9e5",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -54,6 +54,41 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/codemirror",
+            "version": "5.27.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/codemirror.git",
+                "reference": "8e6aade9869a639fdffd8edd8faa36c0a42aaa87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/codemirror/zipball/8e6aade9869a639fdffd8edd8faa36c0a42aaa87",
+                "reference": "8e6aade9869a639fdffd8edd8faa36c0a42aaa87",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "lib/codemirror.js",
+                    "lib/codemirror.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "components",
+                    "bin",
+                    "demo",
+                    "doc",
+                    "test",
+                    "index.html",
+                    "package.json",
+                    "mode/*/*test.js",
+                    "mode/*/*.html"
+                ]
+            }
         },
         {
             "name": "bower-asset/jcrop",
@@ -242,6 +277,44 @@
                 "cross-browser",
                 "php",
                 "upload"
+            ]
+        },
+        {
+            "name": "bower-asset/summernote",
+            "version": "v0.8.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summernote/summernote.git",
+                "reference": "9dc0e7433ecdfabb5ef21b1c38445a22d6d42479"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/summernote/summernote/zipball/9dc0e7433ecdfabb5ef21b1c38445a22d6d42479",
+                "reference": "9dc0e7433ecdfabb5ef21b1c38445a22d6d42479",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": ">=3.0.1",
+                "bower-asset/jquery": ">=1.9.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "./dist/summernote.js",
+                    "./dist/summernote.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "Gruntfile.js",
+                    "MAINTAIN.md",
+                    "grunts",
+                    "node_modules",
+                    "bower_components",
+                    "test"
+                ]
+            },
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -486,6 +559,64 @@
                 "image processing"
             ],
             "time": "2015-09-19T16:54:05+00:00"
+        },
+        {
+            "name": "marqu3s/yii2-summernote",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marqu3s/yii2-summernote.git",
+                "reference": "14c65d57a076117e08ff589281d564bf043b4af0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marqu3s/yii2-summernote/zipball/14c65d57a076117e08ff589281d564bf043b4af0",
+                "reference": "14c65d57a076117e08ff589281d564bf043b4af0",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/codemirror": "@stable",
+                "bower-asset/summernote": "0.*",
+                "yiisoft/yii2": "~2"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "marqu3s\\summernote\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksandr Zelenin",
+                    "email": "aleksandr@zelenin.me",
+                    "homepage": "http://zelenin.me",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Joao Marques",
+                    "email": "joao@jjmf.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 Summernote widget. Super simple WYSIWYG editor on Bootstrap",
+            "homepage": "https://github.com/marqu3s/yii2-summernote",
+            "keywords": [
+                "summernote",
+                "widget",
+                "wysiwyg",
+                "yii2"
+            ],
+            "time": "2017-08-08 20:14:19"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1156,7 +1287,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "marqu3s/yii2-summernote": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

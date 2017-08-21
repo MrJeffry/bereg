@@ -10,7 +10,7 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 use app\widgets\upload\UploadOne;
 use app\widgets\upload\UploadAll;
-
+use \marqu3s\summernote\Summernote;
 $this->title = 'Солнечный берег';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -57,7 +57,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]); ?>
                     <h4>Объекты</h4>
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= UploadOne::widget([
                                 'form' => $form,
                                 'model' => $model,
@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $form->field($model, 'beside_item_aqua_desc'); ?>
                             <?= $form->field($model, 'beside_item_aqua_km'); ?>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= UploadOne::widget([
                                 'form' => $form,
                                 'model' => $model,
@@ -81,7 +81,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $form->field($model, 'beside_item_bridge_desc'); ?>
                             <?= $form->field($model, 'beside_item_bridge_km'); ?>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= UploadOne::widget([
                                 'form' => $form,
                                 'model' => $model,
@@ -93,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $form->field($model, 'beside_item_para_desc'); ?>
                             <?= $form->field($model, 'beside_item_para_km'); ?>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= UploadOne::widget([
                                 'form' => $form,
                                 'model' => $model,
@@ -105,7 +105,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $form->field($model, 'beside_item_fish_desc'); ?>
                             <?= $form->field($model, 'beside_item_fish_km'); ?>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <?= UploadOne::widget([
                                 'form' => $form,
                                 'model' => $model,
@@ -403,7 +403,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                     <hr>
                     <h2>План поселка</h2>
-                    <?= $form->field($model, 'plan_text1')->textarea(); ?>
+                    <?= $form->field($model, 'plan_text1')->widget(Summernote::className()); ?>
                     <?= $form->field($model, 'plan_text2')->textarea(); ?>
                     <?= UploadAll::widget([
                         'form' => $form,
@@ -416,8 +416,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <hr>
                     <h2>Посёлок</h2>
                     <?= $form->field($model, 'village_title'); ?>
-                    <?= $form->field($model, 'village_desc')->textarea(); ?>
-                    <?= $form->field($model, 'village_desc2')->textarea(); ?>
+                    <?= $form->field($model, 'village_desc')->widget(Summernote::className()); ?>
+                    <?= $form->field($model, 'village_desc2')->widget(Summernote::className()); ?>
                     <?= UploadAll::widget([
                         'form' => $form,
                         'model' => $model,
@@ -443,11 +443,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= $form->field($model, 'infrastructure_hospital'); ?>
                     <?= $form->field($model, 'infrastructure_kindergarten'); ?>
                     <?= $form->field($model, 'infrastructure_sea'); ?>
-                    <?= $form->field($model, 'infrastructure_center')->textarea(); ?>
+                    <?= $form->field($model, 'infrastructure_center')->widget(Summernote::className()); ?>
 
 
                     <h2>Подвал</h2>
-                    <?= $form->field($model, 'footer_text'); ?>
+                    <?= $form->field($model, 'footer_text')->textarea(); ?>
                     <?= $form->field($model, 'footer_phone'); ?>
 
 
