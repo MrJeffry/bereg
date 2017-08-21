@@ -258,7 +258,7 @@ Yii::$app->layout = 'site';
                             </table>
                             <div class="btn_group btn_group--left">
                                 <button class="btn btn_gray">Подробнее о технология</button>
-                                <button class="btn btn_red">Хочу здесь жить!</button>
+                                <button class="btn btn_red" data-toggle="modal" data-target="#myModal">Хочу здесь жить!</button>
                             </div>
                         </div>
                         <div class="houses-about-gallery">
@@ -279,7 +279,7 @@ Yii::$app->layout = 'site';
                         </div>
                     </div>
                     <div class="btn_group hidden-lg">
-                        <button class="btn btn_red">Хочу здесь жить!</button>
+                        <button class="btn btn_red" data-toggle="modal" data-target="#type-modal">Хочу здесь жить!</button>
                     </div>
                 </div>
             </div>
@@ -576,7 +576,7 @@ Yii::$app->layout = 'site';
                     <li>Рынок местных фермеров</li>
                 </ul>
                 <div class="btn_grop">
-                    <button class="btn btn_red btn_red-light">Хочу здесь жить!</button>
+                    <button class="btn btn_red btn_red-light" data-toggle="modal" data-target="#order-modal">Хочу здесь жить!</button>
                 </div>
             </div>
         </div>
@@ -622,7 +622,8 @@ Yii::$app->layout = 'site';
 </footer>
 <div class="modals">
 
-    <div class="type-modal">
+    <div class="type-modal modal fade" tabindex="-1" role="dialog" id="type-modal">
+        <button class="close" data-dismiss="modal" aria-label="Close">Х</button>
         <div class="title">
             <div class="desc">
                 <span>1 тип</span>
@@ -669,13 +670,13 @@ Yii::$app->layout = 'site';
         </div>
         <div class="btn-group">
             <a href="" class="btn">Подробнее о технологиях</a>
-            <button class="btn">Хочу здесь жить!</button>
+            <button class="btn" data-toggle="modal" data-target="#order-modal">Хочу здесь жить!</button>
         </div>
     </div>
 
 
-    <div class="order-modal">
-        <button class="close"></button>
+    <div class="order-modal modal fade" tabindex="-1" role="dialog" id="order-modal">
+        <button class="close" data-dismiss="modal" aria-label="Close">Х</button>
 
         <div class="logo"></div>
         <h2></h2>
