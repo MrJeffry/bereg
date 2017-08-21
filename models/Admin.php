@@ -133,6 +133,7 @@ class Admin extends Model
     //village
     public $village_title;
     public $village_desc;
+    public $village_desc2;
     public $village_slider;
 
     //interioirs
@@ -185,7 +186,7 @@ class Admin extends Model
             //шапка
             'header_title' => 'Заголовок',
             'header_desc' => 'Описание',
-            'header_img' => 'Картинка',
+            'header_img' => 'Картинка под описанием',
             'header_slogan' => 'Слоган',
             'header_slogan_desc' => 'Надпись под слоганом',
 
@@ -299,7 +300,8 @@ class Admin extends Model
 
             //village
             'village_title' => 'Заголовок',
-            'village_desc' => 'Описание',
+            'village_desc' => 'Описание left',
+            'village_desc2' => 'Описание right',
             'village_slider' => 'Слайдер',
 
             //interioirs

@@ -58,7 +58,9 @@ Yii::$app->layout = 'site';
                     <button class="view ">Заказать обзор</button>
                     <div class="header-gallery-item header-gallery-item--text wow flipInX">
                         <h2>Заголовок</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque magni, sit sequi perspiciatis porro molestiae. Molestias distinctio id, nesciunt voluptatem vel praesentium nihil repellat velit eos voluptates impedit doloribus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque magni, sit sequi perspiciatis
+                            porro molestiae. Molestias distinctio id, nesciunt voluptatem vel praesentium nihil repellat
+                            velit eos voluptates impedit doloribus!</p>
                     </div>
                     <div class="header-gallery-item wow flipInX"><img src="/img/header-gallery-1.jpg" alt=""></div>
                     <div class="header-gallery-item wow flipInX"><img src="/img/header-gallery-2.jpg" alt=""></div>
@@ -274,7 +276,7 @@ Yii::$app->layout = 'site';
                             </div>
                             <div class="houses-about-gallery-item houses-about-gallery-item--floor">
                                 <img src="/img/houses-about-gallery-4.png" alt="">
-                                 <b>3 этаж</b>
+                                <b>3 этаж</b>
                             </div>
                         </div>
                     </div>
@@ -297,38 +299,115 @@ Yii::$app->layout = 'site';
                 </div>
             </div>
         </div>
-        <div class="frame">
-            <iframe src="img/map.jpg"></iframe>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <div class="frame hidden-lg">
+            <div class="maps">
+                <img src="/img/map.jpg" alt="">
+                <div class="maps-button">
+                    <button class="button button-25">25</button>
+                    <button class="button button-26">26</button>
+                    <button class="button button-29">29</button>
+                    <button class="button button-32">32</button>
+                    <button class="button button-33">33</button>
+                    <button class="button button-36">36</button>
+                    <button class="button button-37">37</button>
+                    <button class="button button-38">38</button>
+                    <button class="button button-42">42</button>
+                    <button class="button button-43">43</button>
+                    <button class="button button-47">47</button>
+                    <button class="button button-48">48</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <row>
+                <div class="col-xs-12">
+                    <div class="frame">
+                        <div class="maps">
+                            <img src="/img/map.jpg" alt="">
+                            <button class="button button-25">25</button>
+                            <button class="button button-26">26</button>
+                            <button class="button button-29">29</button>
+                            <button class="button button-32">32</button>
+                            <button class="button button-33">33</button>
+                            <button class="button button-36">36</button>
+                            <button class="button button-37">37</button>
+                            <button class="button button-38">38</button>
+                            <button class="button button-42">42</button>
+                            <button class="button button-43">43</button>
+                            <button class="button button-47">47</button>
+                            <button class="button button-48">48</button>
+                        </div>
+                    </div>
+                    <div class="maps-button">
+                        <button class="button button-25">25</button>
+                        <button class="button button-26">26</button>
+                        <button class="button button-29">29</button>
+                        <button class="button button-32">32</button>
+                        <button class="button button-33">33</button>
+                        <button class="button button-36">36</button>
+                        <button class="button button-37">37</button>
+                        <button class="button button-38">38</button>
+                        <button class="button button-42">42</button>
+                        <button class="button button-43">43</button>
+                        <button class="button button-47">47</button>
+                        <button class="button button-48">48</button>
+                    </div>
+                </div>
+            </row>
         </div>
 
         <div class="plan_number">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- <iframe class="hidden-xs hidden-sm hidden-md" src="img/map.jpg"></iframe> -->
                     </div>
                 </div>
             </div>
         </div>
+        <div class="plan-detail-table">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="title clearfix">
+                            <div class="number">
+                                Участок №36
+                            </div>
+                            <div class="type">
+                                Тип 2
+                            </div>
+                        </div>
+                        <div class="desc clearfix">
 
+                            <div class="area"><span>Площадь<br></span>212<sup>2</sup></div>
+                            <div class="floors"><span>Этажность<br></span>2 этажа</div>
+                            <div class="bathrooms"><span>Санузлы<br></span>2</div>
+
+                            <div class="rooms"><span>Количество жилых комнат: <br></span>Свободная планирока</div>
+                            <div class="garage"><span>Гараж: <br></span>Встроенный</div>
+                            <div class="ploot"><span>Площадь прилегающего участка: <br></span>12 соток</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div class="plan-detail">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
+
                         <div class="plan-detail-text">
                             <p>Поселок представляет собой комплексную застройку на земельных участках от 11 соток, сервисных
                                 служб, набережной и закрытого обустроенного пляжа.</p>
                             <p>«Солнечный Берег» обеспечен газом, водой, теплом, электричеством, - все коммуникации сетевые,
                                 спроектированы с запасом мощностей, трубопроводы и кабели проведены подземным способом.</p>
                             <p>Дороги поселка вымощены плиткой.</p>
-                            <p>Инфраструктура поселка включает контрольно-пропускной пункт и гостевую парковку. В вечернее и
-                                ночное время поселок освещается уличными фонарями. В поселке высажены деревья и кустарники,
+                            <p>Инфраструктура поселка включает контрольно-пропускной пункт и гостевую парковку. В вечернее
+                                и ночное время поселок освещается уличными фонарями. В поселке высажены деревья и кустарники,
                                 в пешеходной зоне разбиты клумбы, цветники и газоны. Сделан удобный подход к собственному
-                                обустроенному пляжу. Рядом находятся магазин товаров повседневного спроса, ресторан, детские
-                                и спортивные площадки, школа.</p>
+                                обустроенному пляжу. Рядом находятся магазин товаров повседневного спроса, ресторан,
+                                детские и спортивные площадки, школа.</p>
                         </div>
 
                     </div>
@@ -630,7 +709,8 @@ Yii::$app->layout = 'site';
                 <span>194 2</span>
             </div>
             <div class="info">
-                Инфраструктура поселка включает контрольно-пропускной пункт и гостевую парковку. В вечернее и ночное время поселок освещается уличными фонарями.
+                Инфраструктура поселка включает контрольно-пропускной пункт и гостевую парковку. В вечернее и ночное время поселок освещается
+                уличными фонарями.
             </div>
         </div>
 
@@ -695,4 +775,5 @@ Yii::$app->layout = 'site';
 </div>
 <script src="js/script.js"></script>
 </body>
+
 </html>
