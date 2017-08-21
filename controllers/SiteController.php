@@ -64,7 +64,9 @@ class SiteController extends Controller
     {
         $model = new Admin();
 
+        $model->plan_img = Json::decode($model->plan_img);
         $model->village_slider = Json::decode($model->village_slider);
+        $model->interioirs_slider = Json::decode($model->interioirs_slider);
 
         return $this->render('index', [
             'model' => $model,
