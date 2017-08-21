@@ -124,13 +124,13 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionMail($name, $phone, $to = 'basyan@yandex.ru')
+    public function actionMail($name, $phone, $to = 'toemail@yandex.ru')
     {
         $subject = 'Тема письма';
         $mess = "Фио: $name \r\n Тел: $phone";
         Yii::$app->mailer->compose()
             ->setTo($to)
-            ->setFrom([$to => $name])
+            ->setFrom([Yii::$app->params['adminEmail'] => $name])
             ->setSubject($subject)
             ->setTextBody($mess)
             ->send();
