@@ -199,8 +199,6 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
 
-
-
             <h3>Тип 2</h3>
             <?= $form->field($model, 'house_type_2_price'); ?>
             <?= $form->field($model, 'house_type_2_desc')->textarea(); ?>
@@ -264,8 +262,6 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
 
 
-
-
             <h3>Тип 3</h3>
             <?= $form->field($model, 'house_type_3_price'); ?>
             <?= $form->field($model, 'house_type_3_desc')->textarea(); ?>
@@ -327,8 +323,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]); ?>
                 </div>
             </div>
-
-
 
 
             <h3>Тип 4</h3>
